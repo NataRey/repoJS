@@ -65,10 +65,10 @@ console.log(10 <= 9);
 
 
 // operadores logicos y condicionales
-
-let edadCliente = 17;
+// crea un sistema que verifique si una persona tiene la edad  mayor o igual a 18 y tiene entrada le muestre un mensaje que diga acceso concedido, si es menor de 18 y tiene entrada vadilar que tenga un acompañante adulto si cumple esto darle entrada con acompañante, si no cumple alguno de los requisitos no se le puede permitir el acceso
+let edadCliente = 18;
 let tieneEntrada = true;
-let esAcompanado = true;
+let esAcompanadoAdulto = true;
 
 //  sintaxis
 /* if( condicion){
@@ -77,13 +77,65 @@ let esAcompanado = true;
     realice esta accion
 }*/
 
-if (edadCliente >=18 || tieneEntrada ){
+if (edadCliente >=18 && tieneEntrada ){
     console.log("Acceso concedido");
-}else if(edadCliente < 18 && esAcompanado && tieneEntrada ){
+}else if(edadCliente < 18 && tieneEntrada && esAcompanadoAdulto){
     console.log("Acceso con supervision ");
 }else{
     console.log("Acceso denegado");
 }
+
+/// sintaxis
+
+/* switch (expresion){
+    case valor1:
+        accion si se cumple
+        break;
+    case valor2:
+        accion si se cumple
+        break;
+        default: 
+        accion si no se cumplio ningun caso   
+}
+*/
+
+let x = "5";
+
+switch (x){
+    case "5":
+        console.log("Coincide");
+        break;
+        default:
+            console.log("No coincide");
+}
+// crea un programa que me muestre las alertas como un semaforo
+// si es verde que puede avanzar
+// si es amarillo que se prepare para detenerse
+// si es rojo que se detenga 
+// si no tiene ningun color que salga un mensaje que diga  el semaforo esta descompuesto 
+
+let colorSemaforo = "";
+
+switch(colorSemaforo){
+    case "verde":
+        console.log("puede avanzar");
+        break;
+
+        case "amarillo":
+            console.log("preparese para detenerse");
+            break;
+
+            case "rojo":
+                console.log("detenerse");
+                break;
+
+                default:
+                    console.log("el semaforo esta descompuesto ");
+}
+
+// prompt()
+//25 "25"
+// texto "texto"
 
 
 
