@@ -62,3 +62,32 @@ while (contador <= 5){
  * mientras 5 <= 5 entonces imprima numero 5 y luego tome 5+1 = 6
  * mientras 6 <= 5 ya no se cumple se finaliza el bucle
  */
+
+/**do while 
+ * ejecuta el bloque de codigo al menos sin importar si se cumple la coindicion 
+ * 
+ * sintaxis 
+ * do {
+ * el bloque de codigo o accion a reralizar 
+ * }while(condicion);
+ */
+
+// pedir una palabra clave exacta el bucle se repetira hasta que el usuario escriba la palabra requerida 
+
+// let entrada = "" ;
+
+// do{
+//     entrada = prompt("Escribe 'salir' para finalizar el bucle");
+// }while(entrada !== "salir");
+
+// alert("Has salido del bucle");
+
+let contador5 = 1;
+
+do{
+    alert("Esta es la repeticion numero: "+ contador5);
+    contador5++;
+    prompt("Presiona Enter o escribe algo para continuar ");
+}while ( contador5 <=3);
+
+alert("PROCESO COMPLETADO TRAS 3 ITERACIONES");
