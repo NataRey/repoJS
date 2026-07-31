@@ -201,3 +201,6 @@ console.log("Precio ingresado "+ precioNumero + " y el total calculado es: "+tot
 
 
 
+
+
+

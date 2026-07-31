@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda Virtual</h1>
+        <nav id="navegador">
+            <button id="login" >Login</button>
+            <button id="logout">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section id="login-section">
+            <div>
+                <h2>Ingrese sus datos</h2>
+                <input type="text" id="user-input" placeholder="usuario">
+                <input type="password" id="pass-input" placeholder="password">
+                <button id="boton-login">Ingresar</button>
+                <p id="error-login">Credenciales incorrectas</p>
+            </div>
+        </section>
+        <section id="admin-section">
+            <div>
+                <h2>Creacion de productos</h2>
+                <form id="form-product">
+                    <input type="text" id="name"  placeholder="nombre producto">
+                    <input type="number" id="price" placeholder="precio producto">
+                    <input type="text" id="img" placeholder="imagen producto">
+                    <button id="save">Guardar</button>
+                </form>
+            </div>
+        </section>
+        <section id="store-section">
+            <h2>Nuestros productos</h2>
+            <div id="products"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
