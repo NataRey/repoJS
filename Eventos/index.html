@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+<h1>Eventos</h1>
+
+<h3>1. Evento click</h3>
+<p>Se activa inmediatamente al presionar el boton</p>
+<button id="btnClick">Hazme clic</button>
+<h3>2. Evento input</h3>
+<p>Se activa en tiempo real cada vez que escriba o borre por cada letra</p>
+<input type="text" id="inputLetras" placeholder="Escribe algo aqui">
+<h3>3. Evento change</h3>
+<p>Se activa al cambiar la opcion</p>
+<select id="selectOption">
+    <option value="">Elija un estado de animo</option>
+    <option value="Felicidad">Felicidad</option>
+    <option value="Tristeza">Tristeza</option>
+    <option value="Incertidumbre">Incertidumbre</option>
+    <option value="Miedo">Miedo</option>
+    <option value="Sorpresa">Sorpresa</option>
+    <option value="Entusiasmo">Entusiasmo</option>
+</select>
+<h3>4. Evento submit</h3>
+<p>Le pertenece a los formularios, controla el envio de datos</p>
+<form id="fomularioDemo">
+    <input type="text" id="inputNombreForm" placeholder="Ingresa tu nombre" required>
+    <button type="submit">Enviar</button>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
